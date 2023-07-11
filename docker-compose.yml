@@ -1,0 +1,25 @@
+version: '3.9'
+services:
+  client:
+    build: .
+    container_name: proxima-chatiframe
+    ports:
+      - 3000:3000
+
+    # command: npm run dev
+    # volumes:
+    #   - .:/app
+#     networks:
+#       - traefik_proxy
+#     labels:
+#       - "traefik.enable=true"
+#       - "traefik.http.routers.crmclient.rule=Host(`chatiframe.proximaai.co`)"
+#       - "traefik.http.routers.crmclient.tls=true"
+#       - "traefik.http.routers.crmclient.tls.certresolver=letsencrypt"
+
+# networks:
+#   traefik_proxy:
+#     external: true
+
+
+
